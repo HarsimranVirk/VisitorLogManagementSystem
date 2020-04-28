@@ -97,7 +97,7 @@ function App() {
   }
 
   return (
-    <Router history={history} basename={constants.PUBLIC_URL}>
+    <Router history={history}>
       <div className={classes.root}>
         <CssBaseline />
         <AppBar

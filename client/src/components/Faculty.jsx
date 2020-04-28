@@ -75,7 +75,7 @@ function Faculty(props) {
 		if (isFormValid()) {
 			event.preventDefault();
 			console.log(userToken);
-			fetch(`${constants.FACULTY}/create`, {
+			fetch(`${constants.FACULTY}create`, {
 				method: "POST",
 				mode: "cors",
 				headers: {
