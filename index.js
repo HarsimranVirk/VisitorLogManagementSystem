@@ -10,6 +10,7 @@ const visitor = require('./routes/visitor.route');
 const faculty = require('./routes/faculty.route');
 const visitingDetails = require('./routes/visitingDetails.route');
 const admin = require('./routes/admin.route');
+const query = require('./routes/query.route');
 
 const options = {
     key: fs.readFileSync("rootSSL.key"),
@@ -33,6 +34,7 @@ app.use('/api/visitor', visitor);
 app.use('/api/faculty', faculty);
 app.use('/api/dashboard', visitingDetails);
 app.use('/api/admin', admin);
+app.use('/api/query', query);
 
 app.set('view engine', 'ejs');
 app.use(express.static('client/build'));

@@ -88,8 +88,8 @@ function Faculty(props) {
 					if (res.status === 200) return res.json();
 					else {
 						sessionStorage.clear();
-						if (response.status===400) alert("Token invalid. Access prohibited");
-						else if (response.status===401) alert("Unauthorised transaction");
+						if (res.status===400) alert("Token invalid. Access prohibited");
+						else if (res.status===401) alert("Unauthorised transaction");
 						return { msg: "There was an error" };
 					}
 				})

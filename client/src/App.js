@@ -12,6 +12,7 @@ import download from "./assets/images/download.jpeg";
 import Dashboard from './components/Dashboard';
 import AdminSignup from "./components/AdminSignup";
 import AdminLogin from "./components/AdminLogin";
+import Report from './components/Report';
 import constants from "./constants";
 
 const drawerWidth = 240;
@@ -164,6 +165,9 @@ function App() {
             <ListItem button component={Link} to="/dashboard">
               <ListItemText>Dashboard</ListItemText>
             </ListItem>
+            <ListItem button component={Link} to="/report">
+              <ListItemText>Report</ListItemText>
+            </ListItem>
           </List>
 
           <Divider />
@@ -186,6 +190,7 @@ function App() {
             <Route path="/form" component={Form} />
             <Route path="/faculty" render={(props) => <Faculty {...props} userToken={userToken} />} />
             <Route path="/dashboard" component={Dashboard} />
+            <Route path="/report" render={(props) => <Report {...props} userToken={userToken} />} />
             <Route path="/adminSignup" render={(props) => <AdminSignup {...props} userToken={userToken} handleUserToken={handleUserToken} />} />
             <Route path="/adminLogin" render={(props) => <AdminLogin {...props} userToken={userToken} handleUserToken={handleUserToken} />} />
             <Route path="*"> <Redirect to="/" /> </Route>

@@ -6,5 +6,6 @@ export default {
     FACULTY_DASHBOARD : "https://localhost:5000/api/dashboard",
     FACULTY : "https://localhost:5000/api/faculty/",
     VISITOR : "https://localhost:5000/api/visitor",
-    PUBLIC_URL : "https://sleepy-peak-76140.herokuapp.com"
+    PUBLIC_URL : "https://sleepy-peak-76140.herokuapp.com",
+    QUERY: "https://localhost:5000/api/query",
 }
